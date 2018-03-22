@@ -32,7 +32,7 @@ create proc spedit_category
 @description varchar(256)
 as
 update Category set name=@name,
-description=@description where idCategory=idCategory
+description=@description where idCategory=@idCategory
 go
 
 --procedure delete category
